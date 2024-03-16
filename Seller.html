@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تسجيل الدخول - تطبيق الملابس المستعملة</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .login-form {
+      margin-top: 100px;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+    
+    .form-field {
+      margin-bottom: 20px;
+    }
+    
+    .form-field label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-field input {
+      width: 100%;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .login-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #008080;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+    
+    .signup-link {
+      margin-top: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>تسجيل الدخول</h1>
+  <form class="login-form" action="process-login.php" method="POST">
+    <div class="form-field">
+      <label for="username">اسم المستخدم:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-field">
+      <label for="password">كلمة المرور:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit" class="login-button">تسجيل الدخول</button>
+    <a href="Signup.html" class="signup-link">إنشاء حساب جديد</a>
+  </form>
+</body>
+</html>

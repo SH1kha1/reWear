@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> بائع جديد </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    .signup-form {
+      margin-top: 100px;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+    
+    .form-field {
+      margin-bottom: 20px;
+    }
+    
+    .form-field label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-field input {
+      width: 100%;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .form-field select {
+      width: 100%;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .signup-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #008080;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>تسجيل حساب بائع جديد </h1>
+  <form class="signup-form" action="process-signup.php" method="POST">
+    <div class="right-aligned">
+      <label for="name">الاسم الأول</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="right-aligned">
+        <label for="name">الاسم الأوسط</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="right-aligned">
+        <label for="name">الاسم الأخير</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+    <div class="right-aligned">
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="right-aligned">
+      <label for="address">العنوان</label>
+    </div>
+    <div class="right-aligned">
+        <label for="bank-account">الدولة</label>
+        <input type="text" id="bank-account" name="bank-account" required>
+      </div>
+      <div class="right-aligned">
+        <label for="bank-account">المدينة</label>
+        <input type="text" id="bank-account" name="bank-account" required>
+      </div>
+      <div class="right-aligned">
+        <label for="bank-account">الحي</label>
+      <input type="text" id="bank-account" name="bank-account" required>
+      </div>
+      <div class="right-aligned">
+        <label for="bank-account">الشارع</label>
+      <input type="text" id="bank-account" name="bank-account" required>
+      </div>
+    <div class="right-aligned">
+      <label for="bank-account">معلومات الحساب المصرفي</label>
+    </div>
+    <div class="right-aligned">
+        <label for="bank-account">اسم البنك </label>
+        <input type="text" id="bank-account" name="bank-account" required>
+    </div>
+    <div class="right-aligned">
+        <label for="bank-account">رقم الايبان</label>
+        <input type="text" id="bank-account" name="bank-account" required>
+    </div>
+    <div class="right-aligned">
+        <label for="bank-account">رقم الحساب</label>
+        <input type="text" id="bank-account" name="bank-account" required>
+    </div>
+    <div class="right-aligned">
+      <label for="birthdate">تاريخ الميلاد</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+    <button type="submit" class="signup-button">تسجيل حساب جديد</button>
+  </form>
+</body>
+</html>
