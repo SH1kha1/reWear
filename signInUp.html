@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">إنشاء حساب جديد</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d39fee6c09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">إنشاء حساب جديد</h1>
+            <form method="POST" id="form">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="اسم المستخدم" id="username" required>
+                    </div>
+                    <div class="input-field" id="emailField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="البريد الالكتروني" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="كلمة السر" id="password" required>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn" type="submit">إنشاء حساب</button>
+                    <button type="button" id="signinBtn" class="disable" type="submit">تسجيل الدخول</button>
+                </div>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script>
+        let signupBtn = document.getElementById("signupBtn");        
+        let signinBtn = document.getElementById("signinBtn");
+        let emailField = document.getElementById("emailField");
+        let title = document.getElementById("title");
+        let pageTitle = document.getElementById("pageTitle");
+
+        signinBtn.onclick = function(){
+            emailField.style.maxHeight = "0";
+            title.innerHTML = "تسجيل الدخول";
+            pageTitle.innerHTML = "تسجيل الدخول";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        }
+
+        signupBtn.onclick = function(){
+            emailField.style.maxHeight = "60px";
+            title.innerHTML = "إنشاء حساب جديد";
+            pageTitle.innerHTML = "إنشاء حساب جديد";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        }
+
+        signinBtn.addEventListener("click", signIn);
+
+        const form = document.getElementById('form');
+        const message = document.getElementById('message');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const storedUsername = "username"; 
+            const storedPassword = "hashed_password"; 
+
+            if (username === storedUsername && validatePassword(password, storedPassword)) {
+                message.textContent = "Login successful!";
+                location = "sellerAccountPage.html";
+            } else {
+                message.textContent = "Invalid username or password.";
+            }
+        });
+
+        function validatePassword(enteredPassword, storedHash) {
+            return enteredPassword === storedHash; 
+        }
+    </script>
+</body>
+</html>
