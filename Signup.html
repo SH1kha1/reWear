@@ -2,25 +2,24 @@
 <html>
 
 <head>
-  <title> بائع جديد </title>
+  <title>بائع جديد</title>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
   <form class="signup-form" action="process-signup.php" method="POST">
-    <h1>تسجيل حساب بائع جديد </h1>
+    <h1>تسجيل حساب بائع جديد</h1>
     <div class="right-aligned">
-      <label for="name">الاسم الأول</label>
-      <input type="text" id="name" name="name" required>
+      <label for="first-name">الاسم الأول</label>
+      <input type="text" id="first-name" name="first-name" required>
     </div>
     <div class="right-aligned">
-      <label for="name">الاسم الأوسط</label>
-      <input type="text" id="name" name="name" required>
+      <label for="middle-name">الاسم الأوسط</label>
+      <input type="text" id="middle-name" name="middle-name" required>
     </div>
     <div class="right-aligned">
-      <label for="name">الاسم الأخير</label>
-      <input type="text" id="name" name="name" required>
+      <label for="last-name">الاسم الأخير</label>
+      <input type="text" id="last-name" name="last-name" required>
     </div>
     <div class="right-aligned">
       <label for="email">البريد الإلكتروني</label>
@@ -30,41 +29,66 @@
       <label for="address">العنوان</label>
     </div>
     <div class="right-aligned">
-      <label for="bank-account">الدولة</label>
-      <input type="text" id="bank-account" name="bank-account" required>
+      <label for="country">الدولة</label>
+      <input type="text" id="country" name="country" required>
     </div>
     <div class="right-aligned">
-      <label for="bank-account">المدينة</label>
-      <input type="text" id="bank-account" name="bank-account" required>
+      <label for="city">المدينة</label>
+      <input type="text" id="city" name="city" required>
     </div>
     <div class="right-aligned">
-      <label for="bank-account">الحي</label>
-      <input type="text" id="bank-account" name="bank-account" required>
+      <label for="neighborhood">الحي</label>
+      <input type="text" id="neighborhood" name="neighborhood" required>
     </div>
     <div class="right-aligned">
-      <label for="bank-account">الشارع</label>
-      <input type="text" id="bank-account" name="bank-account" required>
+      <label for="street">الشارع</label>
+      <input type="text" id="street" name="street" required>
     </div>
     <div class="right-aligned" style="font-weight: bold; margin-top: 20px; font-size: larger;">
-      <label for="bank-account">معلومات الحساب المصرفي</label>
+      <label for="bank-info">معلومات الحساب المصرفي</label>
     </div>
     <div class="right-aligned">
-      <label for="bank-account">اسم البنك </label>
-      <input type="text" id="bank-account" name="bank-account" required>
+      <label for="bank-name">اسم البنك</label>
+      <input type="text" id="bank-name" name="bank-name" required>
     </div>
     <div class="right-aligned">
-      <label for="bank-account">رقم الايبان</label>
-      <input type="text" id="bank-account" name="bank-account" required>
+      <label for="iban">رقم الايبان</label>
+      <input type="text" id="iban" name="iban" required>
     </div>
     <div class="right-aligned">
-      <label for="bank-account">رقم الحساب</label>
-      <input type="text" id="bank-account" name="bank-account" required>
+      <label for="account-number">رقم الحساب</label>
+      <input type="text" id="account-number" name="account-number" required>
     </div>
     <div class="right-aligned">
       <label for="birthdate">تاريخ الميلاد</label>
       <input type="date" id="birthdate" name="birthdate" required>
     </div>
     <button type="submit" class="signup-button" style="margin-top: 20px;">تسجيل حساب جديد</button>
+
+    <script>
+      // تفعيل الحقول المطلوبة
+      const form = document.querySelector('.signup-form');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // لمنع إرسال النموذج
+
+        // التحقق من صحة الحقول المطلوبة وعرض رسالة الخطأ إذا لم يتم تعبئتها
+        const requiredFields = form.querySelectorAll('[required]');
+        let hasError = false;
+
+        requiredFields.forEach(function(field) {
+          if (field.value.trim() === '') {
+            hasError = true;
+           field.classList.add('error');
+          } else {
+            field.classList.remove('error');
+          }
+        });
+
+        if (!hasError) {
+          form.submit(); // إرسال النموذج إذا تم تعبئة جميع الحقول المطلوبة
+        }
+      });
+    </script>
   </form>
 </body>
 
