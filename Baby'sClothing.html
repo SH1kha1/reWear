@@ -118,5 +118,17 @@
       <button class="add-to-cart">اضافة للسلة   </button>
     </div>
   </div>
+  <script>
+    // احصل على جميع أزرار إضافة السلة
+    var addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    // أضف حدث النقر لكل زر إضافة السلة
+    addToCartButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // تنفيذ الأكواد هنا عند النقر على زر إضافة السلة
+        console.log('تمت إضافة المنتج إلى السلة.');
+      });
+    });
+  </script>
 </body>
 </html>
