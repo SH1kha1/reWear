@@ -19,7 +19,7 @@
                     </div>
                     <div class="input-field" id="emailField">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="البريد الالكتروني" required>
+                        <input type="email" placeholder="البريد الالكتروني" id="email" required>
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
@@ -27,8 +27,8 @@
                     </div>
                 </div>
                 <div class="btn-field">
-                    <button type="button" id="signupBtn" type="submit">إنشاء حساب</button>
-                    <button type="button" id="signinBtn" class="disable" type="submit">تسجيل الدخول</button>
+                    <button id="signupBtn" type="submit">إنشاء حساب</button>
+                    <button id="signinBtn" class="disable" type="button">تسجيل الدخول</button>
                 </div>
             </form>
             <p id="message"></p>
@@ -58,30 +58,23 @@
             signinBtn.classList.add("disable");
         }
 
-        signinBtn.addEventListener("click", signIn);
+        signinBtn.addEventListener('click', signIn);
 
-        const form = document.getElementById('form');
-        const message = document.getElementById('message');
+        function signIn(){
+            let usernameInput = document.getElementById('username').value;
+            let passwordInput = document.getElementById('password').value;
+            emailField = document.getElementById("emailField");
 
-        form.addEventListener('submit', (event) => {
-            event.preventDefault(); 
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const storedUsername = "deemah"; 
-            const storedPassword = "1234"; 
-
-            if (username === storedUsername && validatePassword(password, storedPassword)) {
-                message.textContent = "Login successful!";
-                location = "sellerAccountPage.html";
+            if (usernameInput === 'user' && passwordInput === '1234'){
+                window.alert("Login Successful!");
+                window.location.href = "selleAccountPage.html";
+            } else if (usernameInput === '' || passwordInput === ''){
+                window.alert("Please enter username and/or password");
             } else {
-                message.textContent = "Invalid username or password.";
+                window.alert("Something went wrong! \nPlease try again.");
             }
-        });
-
-        function validatePassword(enteredPassword, storedHash) {
-            return enteredPassword === storedHash; 
         }
+
     </script>
 </body>
 </html>
