@@ -1,24 +1,17 @@
-const http = require('http')
-const fs = require('fs')
-const port = 3000
+const express = require('express');
+const path = require('path');
 
-const server = http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-type': 'text/html'})
-    fs.readFile('Home.html', function(error, data){
-        if (error){
-            res.writeHead(404)
-            res.write('Error: File Not Found')
-        } else {
-            res.write(data)
-        }
-        res.end()
-    })
-})
+const app = express();
+const PORT = 3000;
 
-server.listen(port, function (error) {
-    if (error) {
-        console.log('Something went wrong', error)
-    } else {
-        console.log('Server is listening on port ' + port)
-    }
-})
+// Middleware to serve static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route to handle the root path
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
