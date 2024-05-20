@@ -18,6 +18,12 @@ Sign up at reWear and become a seller. Get your own account where you can sell i
 
 
 Reware's website utilizes a tech stack comprising CSS, HTML, JavaScript, Node.js, and a MongoDB database.
+Libraries used :
+1-ejs.
+2-express.
+3-mongoose.
+4-passport.
+5-nodemon.
 
 
 
