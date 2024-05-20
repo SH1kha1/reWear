@@ -15,3 +15,6 @@ That way, we can help reduce waste and live out the life motto "reduce, reuse, r
 
 Make some money while helping the environment!
 Sign up at reWear and become a seller. Get your own account where you can sell items and get paid per purchase.
+
+
+Reware's website utilizes a tech stack comprising CSS, HTML, JavaScript, Node.js, and a MongoDB database.
