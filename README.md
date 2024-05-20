@@ -18,6 +18,7 @@ Sign up at reWear and become a seller. Get your own account where you can sell i
 
 
 Reware's website utilizes a tech stack comprising CSS, HTML, JavaScript, Node.js, and a MongoDB database.
+
 Libraries used :
 1-ejs.
 2-express.
@@ -32,11 +33,11 @@ In the future, we plan to expand the website to sell a variety of products, incl
 
 Team members:
 Dalal Abdullatif Albaijan.
-Shikha Abdu Omeer
-Deemah Abdulaziz Almutairi
+Shikha Abdu Omeer.
+Deemah Abdulaziz Almutairi.
 
 References:
 [1]W3Schools, “W3Schools Online Web Tutorials,” W3schools.com, 1998. https://www.w3schools.com/
-‌[2]Learning Axis, “Ecommerce Website | Add to Cart | Delete from Cart | HTML, CSS & JavaScript,” YouTube, Nov. 13, 2022. https://www.youtube.com/watch?v=sf_ac-dYh3w&t=301s (accessed May 20, 2024).
-[3]Raddy, “NodeJs Project - Build a Notes App using Express, MongoDB & Passport,” YouTube, Jan. 08, 2023. https://www.youtube.com/watch?v=BDo1lgaZuII&t=7027s (accessed May 20, 2024).
+‌[2]Learning Axis, “Ecommerce Website | Add to Cart | Delete from Cart | HTML, CSS & JavaScript,” YouTube, Nov. 13, 2022. https://www.youtube.com/watch?
+[3]Raddy, “NodeJs Project - Build a Notes App using Express, MongoDB & Passport,” YouTube, Jan. 08, 2023. https://www.youtube.com/watch?
 ‌
