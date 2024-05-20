@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account</title>
+  <title>صفحة البائع</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>My Account</h1>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(231, 136, 149, 0.6), rgba(50, 55, 97, 0.6));
+            text-align: center;
+            margin: 0;
+            padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 10px;
+  }
+  
+  button {
+            width: 100%;
+            position: relative;
+            border: none;
+            border-radius: 5px;
+            background-color:  rgba(50, 55, 97, 0.384);
+            padding: 7px 25px;
+            cursor: pointer;
+            color: white;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  </style>
+  
+    <h1>صفحة بائع  الملابس</h1>
+    <form id="productForm">
+     <input type="file" id="image">
+      <input type="text" id="productName" placeholder="اسم المنتج">
+      <input type="text" id="price" placeholder="السعر">
+      <input type="text"  id="size" placeholder="المقاس">
+      <input type="text" id="color" placeholder="اللون">
+      
+      <button type="submit">إضافة منتج</button>
+    </form>
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>اسم المنتج</th>
+        <th>السعر</th>
+        <th>المقاس</th>
+        <th>اللون</th>
+        <th>صورة المنتج</th>
+      </tr>
+    </thead>
+    <tbody id="productList">
+    </tbody>
+  </table>
+  <script src="script.js"></script>
 </body>
+
 </html>
