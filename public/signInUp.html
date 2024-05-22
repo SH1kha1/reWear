@@ -11,19 +11,19 @@
     <div class="container">
         <div class="form-box">
             <h1 id="title">إنشاء حساب جديد</h1>
-            <form method="POST" id="form">
+            <form action="/public/signInUp" method="POST" id="form">
                 <div class="input-group">
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="اسم المستخدم" id="username" required>
+                        <input type="text" placeholder="اسم المستخدم" id="username" name="username" required>
                     </div>
                     <div class="input-field" id="emailField">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="البريد الالكتروني" id="email" required>
+                        <input type="email" placeholder="البريد الالكتروني" id="email" name="email" required>
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="كلمة السر" id="password" required>
+                        <input type="password" placeholder="كلمة السر" id="password" name="password" required>
                     </div>
                 </div>
                 <div class="btn-field">
@@ -59,6 +59,21 @@
         }
 
         signinBtn.addEventListener('click', signIn);
+
+        function signIn(){
+            let usernameInput = document.getElementById('username').value;
+            let passwordInput = document.getElementById('password').value;
+            emailField = document.getElementById("emailField");
+
+            if (usernameInput === 'user' && passwordInput === '1234'){
+                window.alert("Login Successful!");
+                window.location.href = "sellerAccountPage.html";
+            } else if (usernameInput === '' || passwordInput === ''){
+                window.alert("Please enter username and/or password");
+            } else {
+                window.alert("Something went wrong! \nPlease try again.");
+            }
+        }
 
         function signIn(){
             let usernameInput = document.getElementById('username').value;
