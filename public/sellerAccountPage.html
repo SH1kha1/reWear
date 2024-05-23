@@ -27,12 +27,15 @@ body {
   }
   
   button {
-            width: 100%;
+            width: 180px;
             position: relative;
             border: none;
             border-radius: 5px;
             background-color:  rgba(50, 55, 97, 0.384);
-            padding: 7px 25px;
+            padding-left: 50px;
+            padding-right: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             cursor: pointer;
             color: white;
   }
@@ -53,12 +56,12 @@ body {
     <h1>صفحة بائع  الملابس</h1>
     <form id="productForm">
      <input type="file" id="image">
-      <input type="text" id="productName" placeholder="اسم المنتج">
-      <input type="text" id="price" placeholder="السعر">
-      <input type="text"  id="size" placeholder="المقاس">
-      <input type="text" id="color" placeholder="اللون">
+      <input type="text" id="productName" placeholder="اسم المنتج" name="productName">
+      <input type="text" id="price" placeholder="السعر" name="price">
+      <input type="text"  id="size" placeholder="المقاس" name="size">
+      <input type="text" id="color" placeholder="اللون" name="color">
       
-      <button type="submit">إضافة منتج</button>
+      <button type="submit" id="addProductBtn">إضافة منتج</button>
     </form>
   <table id="productTable">
     <thead>
