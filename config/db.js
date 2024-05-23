@@ -9,14 +9,14 @@ const connectDB = async() => {
     }
 }
 
-module.exports = connectDB;
+//module.exports = connectDB;
 
 const loginSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
     },
-    emal: {
+    email: {
         type: String,
         required: true
     },
@@ -26,4 +26,28 @@ const loginSchema = new mongoose.Schema({
     }
 })
 
-const collection = new mongoose.model("users", loginSchema);
+const collection = mongoose.model("sellers", loginSchema);
+
+const productsSchema = new mongoose.Schema({
+
+    prodName: {
+        type: String,
+        required: true
+    },
+    size: {
+        type: String,
+        required: true
+    },
+    color: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true
+    }
+})
+
+const collection2 = mongoose.model("products", productsSchema);
+
+module.exports = { connectDB, collection, collection2 };
