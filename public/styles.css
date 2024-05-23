@@ -70,29 +70,76 @@ input {
     color: rgba(50, 55, 97, 0.8);
 }
 
-.btn-field {
-    width: 100%;
+button {
+    align-items: center;
+    background-color: #f0e3ed;
+    background-position: 0 0;
+    border: 1px solid rgba(50, 55, 97, 0.8);
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: rgba(50, 55, 97, 0.8);
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 70px;
+    margin-left: 44px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
 }
 
-.btn-field button {
-    flex-basis: 48%;
-    background:rgb(50, 55, 97);
-    color: white;
-    height: 40px;
-    border-radius: 20px;
-    border: 0;
+button:active,
+button:hover,
+button:focus {
     outline: 0;
-    cursor: pointer;
-    transition: background 1s;
+}
+
+
+button:active {
+    background-color: rgba(231, 136, 149, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #f0e3ed;
+}
+
+button:hover {
+    background-color: rgba(50, 55, 97, 0.8);
+    border-color: rgba(50, 55, 97, 0.8);
+    color: #f0e3ed;
+}
+
+button:active:hover,
+button:focus:hover,
+button:focus {
+    background-color: rgba(50, 55, 97, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #f0e3ed;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(50, 55, 97);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: rgb(50, 55, 97);
 }
 
 .input-group {
     height: 280px;
-}
-
-.btn-field button.disable {
-    background: #f0e3ed;
-    color: rgba(50, 55, 97, 0.8);
 }
