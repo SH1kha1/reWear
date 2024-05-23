@@ -42,5 +42,10 @@ References:
 [3]Raddy, “NodeJs Project - Build a Notes App using Express, MongoDB & Passport,” YouTube, Jan. 08, 2023. https://www.youtube.com/watch?
 [4]Nour Homsi, “برمجية تسجيل مستخدم و تسجيل الدخول,” YouTube, Apr. 03, 2023. https://www.youtube.com/watch?v=qu7SK7ZoKCE
 [5]“Online Flowchart Maker | Lucidchart,” www.lucidchart.com. https://www.lucidchart.com/pages/landing/flowchart-software?
+[6]“Beautiful CSS buttons examples - CSS Scan,” getcssscan.com. https://getcssscan.com/css-buttons-examples
+[7]“Bars Classic Solid Icon | Font Awesome,” fontawesome.com. https://fontawesome.com/icons/bars?f=classic&s=solid
+[8]“font-awesome - Libraries - cdnjs - The #1 free and open source CDN built to make life easier for developers,” cdnjs. https://cdnjs.com/libraries/font-awesome
+‌[9]Honey web designer, “Login and SignUp System with User Authentication Using Node Js, Express Js & MongoDB,” YouTube, Aug. 05, 2023. https://youtu.be/O5kh3sTVSvA?si=SktK6j5_bKpmOYl3 .
+[10]ProgrammingKnowledge, “How to Install MongoDB on Mac | Install MongoDB on macOS (2024),” YouTube, Jan. 12, 2024. https://youtu.be/8gUQL2zlpvI?si=NavHk5hhfMjwuz4f .
 ‌
 ‌
