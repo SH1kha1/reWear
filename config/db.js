@@ -30,8 +30,12 @@ const collection = mongoose.model("sellers", loginSchema);
 
 const productsSchema = new mongoose.Schema({
 
-    prodName: {
+    productName: {
         type: String,
+        required: true
+    },
+    price: {
+        type: Number,
         required: true
     },
     size: {
@@ -42,9 +46,9 @@ const productsSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    price: {
-        type: Number,
-        required: true
+    imageURL: {
+        type: String,
+        required: false
     }
 })
 
