@@ -1,10 +1,34 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.getElementById('addProductBtn').addEventListener('click', async (e) => {
+  e.preventDefault();
 
-  var addToCartButtons = document.querySelectorAll('.add-to-cart');
+  const form = document.getElementById('productForm');
+  const formData = new FormData(form);
 
-  addToCartButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      console.log('تمت إضافة المنتج إلى السلة!');
+  const productData = {
+    productName: formData.get('productName'),
+    price: parseFloat(formData.get('price')),
+    size: formData.get('size'),
+    color: formData.get('color'),
+    imageURL: formData.get('imageURL')
+  };
+
+  try {
+    const response = await fetch('/sellerAccountPage', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(productData)
     });
-  });
+
+    if (response.ok) {
+      alert('Product added successfully');
+      // Clear form or perform any other actions after successful submission
+    } else {
+      alert('Failed to add product');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('An error occurred');
+  }
 });
