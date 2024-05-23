@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d39fee6c09.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>إنشاء حساب جديد</h1>
+            <form action="/public/signUp" method="POST">
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="اسم المستخدم" id="username" name="username" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="البريد الالكتروني" id="email" name="email" required>
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="كلمة السر" id="password" name="password" required>
+                </div>
+                <button id="signupBtn" type="submit">إنشاء حساب</button>
+            </form>
+            <p>لديك حساب بالفعل؟ <a href="signIn.html">سجل الدخول من هنا</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
