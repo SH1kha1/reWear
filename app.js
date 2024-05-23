@@ -33,10 +33,6 @@ app.get('/signUp.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'signUp.html'));
 });
 
-app.get('/products.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'products.html'));
-});
-
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
@@ -96,5 +92,42 @@ app.post('/public/signIn', async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'An error occurred during login' });
+  }
+});
+
+app.get('/sellerAccountPage.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'sellerAccountPage.html'));
+});
+
+app.post('/sellerAccountPage', async (req, res) => {
+
+  try {
+
+    const data = {
+      productName: req.body.productName,
+      price: req.body.price,
+      size: req.body.size,
+      color: req.body.color
+    }
+
+    const productData = await collection2.insertMany([data]);
+
+    console.log(productData);
+    res.status(200).json(productData);
+
+  } catch (error) {
+
+    console.error(error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+app.get('/sellerAccountPage', async (req, res) => {
+  try {
+    const products = await collection2.find();
+    res.json(products);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Internal Server Error');
   }
 });
