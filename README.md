@@ -37,7 +37,7 @@ Now you can browse our website, sign up/sign in, add items to your cart, place o
 4. nodemon.
    
 
-In the future: We need to link a Product.html file to the database. 
+- In the future: We need to link a Product.html file to the database. 
 we plan to expand the website to sell a variety of products, including electronic devices and more, while also enhancing the design.
 
 - Team members:
@@ -45,7 +45,7 @@ Dalal Abdullatif Albaijan.
 Shikha Abdu Omeer.
 Deemah Abdulaziz Almutairi.
 
-Presentation link: https://www.canva.com/design/DAGFyFhyZls/pXod-YVruBqMN71bh8eAbA/edit?utm_content=DAGFyFhyZls&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+- Presentation link: https://www.canva.com/design/DAGFyFhyZls/pXod-YVruBqMN71bh8eAbA/edit?utm_content=DAGFyFhyZls&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 - References:
 
