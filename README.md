@@ -45,7 +45,7 @@ Dalal Abdullatif Albaijan.
 Shikha Abdu Omeer.
 Deemah Abdulaziz Almutairi.
 
-presentation link: https://www.canva.com/design/DAGFyFhyZls/pXod-YVruBqMN71bh8eAbA/edit?utm_content=DAGFyFhyZls&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Presentation link: https://www.canva.com/design/DAGFyFhyZls/pXod-YVruBqMN71bh8eAbA/edit?utm_content=DAGFyFhyZls&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 - References:
 
