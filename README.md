@@ -29,7 +29,7 @@ Libraries used :
 
 
 
-In the future, we plan to expand the website to sell a variety of products, including electronic devices and more, while also enhancing the design.
+In the future,We need to add a database to the Product.html file. we plan to expand the website to sell a variety of products, including electronic devices and more, while also enhancing the design.
 
 Team members:
 Dalal Abdullatif Albaijan.
