@@ -30,12 +30,16 @@ After that the server will start running on port 3000 and will connect to the da
 
 Now you can browse our website, sign up/sign in, add items to your cart, place orders, and add items for sale if you become a seller at reWear. 
 
-- Libraries used :
+- Libraries used:
 1. ejs.
 2. express.
 3. mongoose.
 4. nodemon.
-   
+
+- Flowchart:
+
+![image](https://github.com/SH1kha1/reWear/assets/163601138/b54466ed-4dea-4213-aa2e-24c4b76631f2)
+
 
 - In the future: We need to link a Product.html file to the database. 
 we plan to expand the website to sell a variety of products, including electronic devices and more, while also enhancing the design.
