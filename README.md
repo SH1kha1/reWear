@@ -23,8 +23,7 @@ Reware's website utilizes a tech stack comprising CSS, HTML, JavaScript, Node.js
 1. ejs.
 2. express.
 3. mongoose.
-4. passport.
-5. nodemon.
+4. nodemon.
    
 
 In the future: We need to link a Product.html file to the database. 
