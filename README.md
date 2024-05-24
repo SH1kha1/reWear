@@ -28,6 +28,8 @@ After that the server will start running on port 3000 and will connect to the da
 
 4. ⁠Open localhost:3000 in web browser
 
+Now you can browse our website, sign up/sign in, add items to your cart, place orders, and add items for sale if you become a seller at reWear. 
+
 - Libraries used :
 1. ejs.
 2. express.
