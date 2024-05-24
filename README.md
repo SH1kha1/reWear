@@ -19,6 +19,15 @@ Sign up at reWear and become a seller. Get your own account where you can sell i
 
 Reware's website utilizes a tech stack comprising CSS, HTML, JavaScript, Node.js, and a MongoDB database.
 
+- Setup: 
+1. Open app.js 
+2. ⁠Open integrated terminal at app.js 
+3. ⁠Write npm start in terminal 
+
+After that the server will start running on port 3000 and will connect to the database
+
+4. ⁠Open localhost:3000 in web browser
+
 - Libraries used :
 1. ejs.
 2. express.
