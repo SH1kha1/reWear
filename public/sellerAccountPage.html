@@ -20,12 +20,14 @@ body {
   
   h1 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
   }
   
   form {
     margin-bottom: 10px;
   }
-  
   button {
             width: 180px;
             position: relative;
@@ -50,9 +52,24 @@ body {
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
-
+  a{
+    margin-left: 1000px;
+      text-decoration: none;
+      display: flex;
+      padding: 10px 20px;
+      font-size: 20px;
+      width: 200px;
+      height: 50px;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 8px;
+  }
+  a:hover{
+      background-color: rgba(50, 55, 97, 0.384);
+      color: rgb(231, 136, 149);
+  }
   </style>
-  
+    <a href="index.html"class ="Home-page">الصفحة الرئيسية </a>
     <h1>صفحة بائع  الملابس</h1>
     <form id="productForm">
      <input type="file" id="image">
@@ -63,19 +80,6 @@ body {
       
       <button type="submit" id="addProductBtn">إضافة منتج</button>
     </form>
-  <table id="productTable">
-    <thead>
-      <tr>
-        <th>اسم المنتج</th>
-        <th>السعر</th>
-        <th>المقاس</th>
-        <th>اللون</th>
-        <th>صورة المنتج</th>
-      </tr>
-    </thead>
-    <tbody id="productList">
-    </tbody>
-  </table>
   <script src="script.js"></script>
 </body>
 
